@@ -11,16 +11,7 @@ module.exports = {
     sidebar: 'auto',
     sidebar: [
       ['/', 'Home'],
-      ['about.md', 'Sobre'],
-      [    
-        {
-          title: 'Estilos',
-          collapsable: true,
-          children: [
-            '/styles/colors.md'
-          ]
-        },
-      ],
+      ['about.md', 'Sobre']
     ],
     // sidebar: [
     //   {
