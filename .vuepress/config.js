@@ -24,7 +24,7 @@ module.exports = {
         title: 'Estilos',
         collapsable: true,
         children: [
-          '/styles/'
+          '/styles/colors.md'
         ]
       },
       {
