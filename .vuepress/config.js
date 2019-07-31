@@ -10,9 +10,28 @@ module.exports = {
 
     sidebar: 'auto',
     sidebar: [
-      ['/', 'Home'],
-      ['about.md', 'Sobre']
-    ],
+      {
+        title: 'Home',
+        collapsable: false,
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: 'Sobre',
+        collapsable: false,
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: 'Estilos',
+        collapsable: true,
+        children: [
+          'colors'
+        ]
+      },
+    ]
     // sidebar: [
     //   {
     //     title: 'Boas-vindas',
