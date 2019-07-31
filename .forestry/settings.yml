@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: document
+  path: config.json
+  label: Site Config
+  match: "**/*"
 - type: directory
   path: en
   label: Home
