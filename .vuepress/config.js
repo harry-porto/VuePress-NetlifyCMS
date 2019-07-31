@@ -7,17 +7,13 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' }
     ],
-
-    sidebar: 'auto',
     sidebar: [
       {
         title: 'Boas-vindas',
-        collapsable: false,
         link: '/'
       },
       {
         title: 'Sobre',
-        collapsable: false,
         link: '/about.md'
       },
       {
