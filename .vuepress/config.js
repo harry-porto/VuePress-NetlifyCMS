@@ -3,8 +3,8 @@ module.exports = {
   description: 'Design System da Conta Azul',
   dest: 'pages',
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    // ['link', { rel: 'icon', href: '/logo.png' }],
+    // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
@@ -13,6 +13,20 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
+  locales: {
+    // The key is the path for the locale to be nested under.
+    // As a special case, the default locale can use '/' as its path.
+    '/': {
+      lang: 'pt-BR', // this will be set as the lang attribute on <html>
+      title: 'Magica',
+      description: 'Design System da Conta Azul'
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'Magica',
+      description: 'Conta Azul Design System'
+    }
+  },
   themeConfig: {
     // sidebar: 'auto',
     locales: {
@@ -65,55 +79,29 @@ module.exports = {
         },
         algolia: {},
         sidebar: [
-          [ '/', 'Welcome' ],
-          [ '/about.md', 'About' ],
+          [ '/en/', 'Welcome' ],
+          [ 'en/about.md', 'About' ],
           {
             title: 'Styles',
             collapsable: true,
             children: [
-              ['/styles/colors', 'Colors'],
+              ['en/styles/colors', 'Colors'],
             ]
           },
           {
             title: 'Components',
             collapsable: true,
             children: [
-              ['/components/badge', 'Badge'],
-              ['/components/radio', 'Radio'],
-              ['/components/select', 'Select'],          
+              ['en/components/badge', 'Badge'],
+              ['en/components/radio', 'Radio'],
+              ['en/components/select', 'Select'],          
             ]
           }
         ],
       }
-    }
-
-    locales: {
-      // The key is the path for the locale to be nested under.
-      // As a special case, the default locale can use '/' as its path.
-      '/': {
-        lang: 'pt-BR', // this will be set as the lang attribute on <html>
-        title: 'Magica',
-        description: 'Design System da Conta Azul'
-      },
-      '/en/': {
-        lang: 'en-US',
-        title: 'Magica',
-        description: 'Conta Azul Design System'
-      }
     },
     displayAllHeaders: true, // 默认值：false
     activeHeaderLinks: true, // 默认值：true
-    lastUpdated: 'Última atualização', // string | boolean
-
-    serviceWorker: {
-      updatePopup: true // Boolean | Object, 默认值是 undefined.
-      // 如果设置为 true, 默认的文本配置将是: 
-      // updatePopup: { 
-      //    message: "New content is available.", 
-      //    buttonText: "Refresh" 
-      // }
-    },
-
 
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     // repo: 'harry-porto/VuePress-NetlifyCMS',
