@@ -57,7 +57,7 @@ collections:
       - {label: "Conteúdo", name: "body", widget: "markdown"}
   - name: "Components"
     label: "Components"
-    folder: "/en/components"
+    folder: "en/components"
     create: true # Allow users to create new documents in this collection
     filter: {field: "language", value: "en"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -67,7 +67,7 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
   - name: "Componentes"
     label: "Componentes"
-    folder: "/pt/componentes"
+    folder: "pt/componentes"
     create: true # Allow users to create new documents in this collection
     filter: {field: "language", value: "pt"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
