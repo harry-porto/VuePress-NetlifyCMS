@@ -17,8 +17,8 @@ module.exports = {
           title: 'Componentes',
           collapsable: true,
           children: [
-            'components/radio/',
-            'components/select/'
+            'components/radio.md',
+            'components/select.md'
           ]
         }
       ],
