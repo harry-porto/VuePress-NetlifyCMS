@@ -11,8 +11,8 @@ module.exports = {
     sidebar: 'auto',
     sidebar: [
       ['/', 'Home'],
-      ['/about.md', 'Sobre'],
-      ['/components', 'Componentes'],
+      ['about.md', 'Sobre'],
+      ['components/', 'Componentes'],
     ],
     // sidebar: [
     //   {
