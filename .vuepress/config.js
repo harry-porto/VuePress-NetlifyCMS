@@ -29,8 +29,9 @@ module.exports = {
         title: 'Componentes',
         collapsable: true,
         children: [
+          ['/components/badge', 'Badge'],
           ['/components/radio', 'Radio'],
-          ['/components/select', 'Select'],
+          ['/components/select', 'Select'],          
         ]
       }
     ],
