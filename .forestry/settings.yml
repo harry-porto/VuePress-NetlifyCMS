@@ -21,7 +21,7 @@ sections:
   label: Contributing
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: en/styles
   label: Styles
@@ -51,7 +51,7 @@ sections:
   label: Contribuindo
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 upload_dir: media
 public_path: "/media"
 front_matter_path: ''
