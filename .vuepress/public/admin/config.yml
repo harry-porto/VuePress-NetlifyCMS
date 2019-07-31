@@ -8,9 +8,46 @@ media_folder: "media" # Folder where user uploaded files should go
 publish_mode: editorial_workflow
 
 collections:
-  - label: "Português"
-    name: "pt"
-    folder: "/"
+  # - name: "Home" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Home" # Used in the UI
+  #   folder: "/" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  # - name: "Components" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Componentes" # Used in the UI
+  #   folder: "components" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  # - name: "Styles" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Styles" # Used in the UI
+  #   folder: "styles" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  - name: "en"
+    label: "English"
+    folder: "en/"
+    create: true # Allow users to create new documents in this collection
+    filter: {field: "language", value: "en"}
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["en", "pt"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Content", name: "body", widget: "markdown"}
+  - name: "pt"
+    label: "Português"
+    folder: "pt/"
     create: true # Allow users to create new documents in this collection
     filter: {field: "language", value: "pt"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -20,7 +57,7 @@ collections:
       - {label: "Conteúdo", name: "body", widget: "markdown"}
   - name: "en/components"
     label: "Components"
-    folder: "/en/components"
+    folder: "en/components/"
     create: true # Allow users to create new documents in this collection
     filter: {field: "language", value: "en"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -28,9 +65,9 @@ collections:
       - {label: "Language", name: "language", widget: "select", options: ["en", "pt"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
-  - label: "Português"
-    name: "pt/componentes"
-    folder: "/pt/componentes"
+  - name: "pt/componentes"
+    label: "Componentes"
+    folder: "pt/componentes/"
     create: true # Allow users to create new documents in this collection
     filter: {field: "language", value: "pt"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
