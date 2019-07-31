@@ -5,14 +5,20 @@ module.exports = {
   themeConfig: {
 
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Sobre', link: 'about.md' }
+      { text: 'Home', link: '/' }
     ],
 
     sidebar: 'auto',
     sidebar: [
-      ['/', 'Home'],
-      ['components/', 'Componentes']
+      ['/', 'Boas-vindas'],
+      ['about.md', 'Sobre'],
+      ['styles/', 'Estilos'],
+      ['components/', 'Componentes'],
+      ['ilustrations/', 'Ilustrações'],
+      ['resources/', 'Recursos'],
+      ['contributing/', 'Contribuindo'],
+      ['updates/', 'Atualizações'],
+      ['help/', 'Ajuda'],
     ],
 
     displayAllHeaders: true, // 默认值：false
