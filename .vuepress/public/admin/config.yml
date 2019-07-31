@@ -17,9 +17,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Docs" # Used in routes, e.g., /admin/collections/blog
-    label: "Docs" # Used in the UI
-    folder: "docs" # The path to the folder where the documents are stored
+  - name: "Components" # Used in routes, e.g., /admin/collections/blog
+    label: "Componentes" # Used in the UI
+    folder: "components" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
