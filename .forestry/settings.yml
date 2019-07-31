@@ -29,6 +29,12 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
+  path: en/resources
+  label: Resources
+  create: all
+  match: "**/*"
+  new_doc_ext: ".md"
+- type: directory
   path: pt
   label: Inicial
   create: all
@@ -52,6 +58,12 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
+- type: directory
+  path: pt/recursos
+  label: Recursos
+  create: all
+  match: "**/*"
+  new_doc_ext: ".md"
 upload_dir: media
 public_path: "/media"
 front_matter_path: ''
