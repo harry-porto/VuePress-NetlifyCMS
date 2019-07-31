@@ -6,17 +6,13 @@ date: 2019-07-31T02:08:13.582Z
 
 O componente radio button deve ser utilizado quando o usuário precisar escolher uma e somente uma opção ente um grupo de itens.
 
-
-
 Quando usar 
 
 Use em formulários quando for necessário selecionar uma opção entre várias. Ideal para quando se pode expor todas as opções de uma lista, evitando maior demanda cognitiva. Entretanto, caso as opções disponíveis puderem ser reduzidas, considere usar um menu suspenso, pois ele usa menos espaço.
 
-
-
 Anatomia
 
-
+![Anatomia Radio](/media/radio-anatomy.png "Anatomia Radio")
 
 Round-box:   caixa que contém a marcação de "selecionado". Podendo ser apresentada mais de uma vez, de acordo com o contexto de uso;
 
@@ -56,8 +52,6 @@ Comportamento
 
 Radio button default
 
-
-
 Radio button ativo
 
 Radio button inativo
@@ -68,15 +62,9 @@ Exemplos
 
 Aplicando radio button para escolhas binárias
 
-
-
 Certo
 
 Nesse exemplo, como é preciso escolher apenas uma entre as duas opções, é aplicado o radio button corretamente.
-
-
-
-
 
 Errado
 
