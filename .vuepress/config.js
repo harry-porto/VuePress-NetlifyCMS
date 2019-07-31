@@ -102,7 +102,6 @@ module.exports = {
     },
     plugins: {
       redirect: {
-        locales: true,
         redirectors: [
           // customize your redirectors
           {
