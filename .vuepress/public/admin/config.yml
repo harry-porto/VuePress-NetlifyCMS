@@ -8,57 +8,33 @@ media_folder: "media" # Folder where user uploaded files should go
 publish_mode: editorial_workflow
 
 collections:
-  - name: "Home" # Used in routes, e.g., /admin/collections/blog
-    label: "Home" # Used in the UI
-    folder: "/" # The path to the folder where the documents are stored
+  - label: "Português"
+    name: "pt"
+    folder: "/"
     create: true # Allow users to create new documents in this collection
+    filter: {field: "language", value: "pt"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Components" # Used in routes, e.g., /admin/collections/blog
-    label: "Componentes" # Used in the UI
-    folder: "components" # The path to the folder where the documents are stored
+    fields:
+      - {label: "Linguagem", name: "language", widget: "select", options: ["en", "pt"]}
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+  - name: "en/components"
+    label: "Components"
+    folder: "/en/components"
     create: true # Allow users to create new documents in this collection
+    filter: {field: "language", value: "en"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["en", "pt"]}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Styles" # Used in routes, e.g., /admin/collections/blog
-    label: "Styles" # Used in the UI
-    folder: "styles" # The path to the folder where the documents are stored
+      - {label: "Content", name: "body", widget: "markdown"}
+  - label: "Português"
+    name: "pt/componentes"
+    folder: "/pt/componentes"
     create: true # Allow users to create new documents in this collection
+    filter: {field: "language", value: "pt"}
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "en" # Used in routes, e.g., /admin/collections/blog
-    label: "English" # Used in the UI
-    folder: "en" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "en/components" # Used in routes, e.g., /admin/collections/blog
-    label: "Components" # Used in the UI
-    folder: "en/components/" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "en/styles" # Used in routes, e.g., /admin/collections/blog
-    label: "Styles" # Used in the UI
-    folder: "en/styles/" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+    fields:
+      - {label: "Linguagem", name: "language", widget: "select", options: ["en", "pt"]}
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}

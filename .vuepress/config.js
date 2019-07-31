@@ -16,7 +16,7 @@ module.exports = {
   locales: {
     // The key is the path for the locale to be nested under.
     // As a special case, the default locale can use '/' as its path.
-    '/': {
+    '/pt/': {
       lang: 'pt-BR', // this will be set as the lang attribute on <html>
       title: 'Magica',
       description: 'Design System da Conta Azul'
@@ -30,7 +30,7 @@ module.exports = {
   themeConfig: {
     // sidebar: 'auto',
     locales: {
-      '/': {
+      '/pt/': {
         // text for the language dropdown
         selectText: 'Línguas',
         // label for this locale in the language dropdown
@@ -47,22 +47,22 @@ module.exports = {
         // algolia docsearch options for current locale
         algolia: {},
         sidebar: [
-          [ '/', 'Boas-vindas' ],
-          [ '/about.md', 'Sobre' ],
+          [ '/pt/', 'Boas-vindas' ],
+          [ '/pt/sobre.md', 'Sobre' ],
           {
             title: 'Estilos',
             collapsable: true,
             children: [
-              ['/styles/colors', 'Cores'],
+              ['/pt/estilos/cores', 'Cores'],
             ]
           },
           {
             title: 'Componentes',
             collapsable: true,
             children: [
-              ['/components/badge', 'Badge'],
-              ['/components/radio', 'Radio'],
-              ['/components/select', 'Select'],          
+              ['/pt/componentes/badge', 'Badge'],
+              ['/pt/componentes/radio', 'Radio'],
+              ['/pt/componentes/select', 'Select'],          
             ]
           }
         ],
@@ -80,25 +80,43 @@ module.exports = {
         algolia: {},
         sidebar: [
           [ '/en/', 'Welcome' ],
-          [ 'en/about.md', 'About' ],
+          [ '/en/about.md', 'About' ],
           {
             title: 'Styles',
             collapsable: true,
             children: [
-              ['en/styles/colors', 'Colors'],
+              ['/en/styles/colors', 'Colors'],
             ]
           },
           {
             title: 'Components',
             collapsable: true,
             children: [
-              ['en/components/badge', 'Badge'],
-              ['en/components/radio', 'Radio'],
-              ['en/components/select', 'Select'],          
+              ['/en/components/badge', 'Badge'],
+              ['/en/components/radio', 'Radio'],
+              ['/en/components/select', 'Select'],          
             ]
           }
         ],
       }
+    },
+    plugins: {
+      redirect: {
+        locales: true,
+        redirectors: [
+          // customize your redirectors
+          {
+            base: '/', // automatically redirect `/my-plugins/` to a subpage
+            storage: true, // save the result of the last visit to `localStorage` for the next redirect
+            alternative: [
+              // provide an alternate list
+              // if no page was matched, you will get a "404 not found"
+              'en',
+              'pt',
+            ]
+          },
+        ],
+      },
     },
     displayAllHeaders: true, // 默认值：false
     activeHeaderLinks: true, // 默认值：true
