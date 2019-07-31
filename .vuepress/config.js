@@ -10,15 +10,28 @@ module.exports = {
 
     sidebar: 'auto',
     sidebar: [
-      ['/', 'Boas-vindas'],
-      ['about.md', 'Sobre'],
-      ['styles/', 'Estilos'],
-      ['components/', 'Componentes'],
-      ['ilustrations/', 'Ilustrações'],
-      ['resources/', 'Recursos'],
-      ['contributing/', 'Contribuindo'],
-      ['updates/', 'Atualizações'],
-      ['help/', 'Ajuda'],
+      {
+        title: 'Boas-vindas',
+        link: '/'
+      },
+      {
+        title: 'Sobre',
+        link: '/about.md'
+      },
+      {
+        title: 'Estilos',
+        collapsable: true,
+        children: [
+          '/styles/'
+        ]
+      },
+      {
+        title: 'Componentes',
+        collapsable: true,
+        children: [
+          '/components/'
+        ]
+      }
     ],
 
     displayAllHeaders: true, // 默认值：false
