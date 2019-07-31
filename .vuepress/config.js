@@ -12,7 +12,16 @@ module.exports = {
     sidebar: [
       ['/', 'Home'],
       ['about.md', 'Sobre'],
-      ['components/', 'Componentes'],
+      [
+        {
+          title: 'Componentes',
+          collapsable: true,
+          children: [
+            'components/radio/',
+            'components/select/'
+          ]
+        }
+      ],
     ],
     // sidebar: [
     //   {
