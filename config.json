@@ -1,14 +1,32 @@
 {
-    "title": "Acme",
-    "description": "Creative Agency",
+    "title": "Magica",
+    "description": "DS",
     "logo": "/upload/logo.svg",
-    "footer": "Ⓒ Acme",
+    "footer": "Ⓒ Conta Azul",
     "favicon": "favicon-32x32.png",
     "navigation": [
       {
-        "text": "Works",
-        "link": "/",
+        "text": "Home - English",
+        "link": "/en",
         "position": "left",
+        "external": false
+      },
+      {
+        "text": "Home - Português",
+        "link": "/pt",
+        "position": "left",
+        "external": false
+      },
+      {
+        "text": "Components",
+        "link": "/en/componentes/",
+        "position": "right",
+        "external": false
+      },
+      {
+        "text": "Componentes",
+        "link": "/pt/componentes/",
+        "position": "right",
         "external": false
       },
       {
@@ -22,12 +40,6 @@
         "link": "mailto:sayhi@mydomain.com",
         "position": "right",
         "external": true
-      },
-      {
-        "text": "Journal",
-        "link": "/journal/",
-        "position": "right",
-        "external": false
       }
     ]
   }
