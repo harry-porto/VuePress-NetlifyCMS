@@ -21,14 +21,14 @@ module.exports = {
         title: 'Sobre',
         collapsable: false,
         children: [
-          '/'
+          'about.md'
         ]
       },
       {
         title: 'Estilos',
         collapsable: true,
         children: [
-          'colors'
+          'styles/colors.md'
         ]
       },
     ]
