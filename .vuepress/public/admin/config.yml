@@ -35,7 +35,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "EN" # Used in routes, e.g., /admin/collections/blog
+  - name: "en" # Used in routes, e.g., /admin/collections/blog
     label: "English" # Used in the UI
     folder: "en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -44,18 +44,18 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "EN/Components" # Used in routes, e.g., /admin/collections/blog
+  - name: "en/components" # Used in routes, e.g., /admin/collections/blog
     label: "Components" # Used in the UI
-    folder: "en/components" # The path to the folder where the documents are stored
+    folder: "en/components/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "EN/Styles" # Used in routes, e.g., /admin/collections/blog
+  - name: "en/styles" # Used in routes, e.g., /admin/collections/blog
     label: "Styles" # Used in the UI
-    folder: "en/styles" # The path to the folder where the documents are stored
+    folder: "en/styles/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
