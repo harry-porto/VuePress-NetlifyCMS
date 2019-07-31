@@ -7,31 +7,38 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' }
     ],
+
+    sidebar: 'auto',
     sidebar: [
-      {
-        title: 'Boas-vindas',
-        link: '/'
-      },
-      {
-        title: 'Sobre',
-        link: '/about.md'
-      },
-      {
-        title: 'Estilos',
-        collapsable: true,
-        children: [
-          '/styles/colors.md'
-        ]
-      },
-      {
-        title: 'Componentes',
-        collapsable: true,
-        children: [
-          '/components/radio-button.md',
-          '/components/select.md'
-        ]
-      }
+      ['/', 'Home'],
+      ['/about.md', 'Sobre'],
+      ['/components', 'Componentes'],
     ],
+    // sidebar: [
+    //   {
+    //     title: 'Boas-vindas',
+    //     link: '/'
+    //   },
+    //   {
+    //     title: 'Sobre',
+    //     link: '/about.md'
+    //   },
+    //   {
+    //     title: 'Estilos',
+    //     collapsable: true,
+    //     children: [
+    //       '/styles/colors.md'
+    //     ]
+    //   },
+    //   {
+    //     title: 'Componentes',
+    //     collapsable: true,
+    //     children: [
+    //       '/components/radio-button.md',
+    //       '/components/select.md'
+    //     ]
+    //   }
+    // ],
 
     displayAllHeaders: true, // 默认值：false
     activeHeaderLinks: true, // 默认值：true
