@@ -9,6 +9,9 @@
     "vuepress": "^0.14.8"
   },
   "dependencies": {
+    "directory-tree": "^2.2.3",
+    "path": "^0.12.7",
+    "vuepress-bar": "^0.1.1",
     "vuepress-plugin-redirect": "^1.1.2"
   }
 }
