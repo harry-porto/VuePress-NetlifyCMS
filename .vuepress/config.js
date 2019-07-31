@@ -6,14 +6,6 @@ module.exports = {
 
     nav: [
       { text: 'Home', link: '/' },
-      {
-        text: 'Componentes',
-        items: [
-          { text: 'Checkbox', link: 'components/checkbox.md' },
-          { text: 'Select', link: 'components/select.md' },
-          { text: 'Menu', link: 'components/menu.md' }
-        ]
-      },
       { text: 'Sobre', link: 'about.md' }
     ],
 
@@ -25,7 +17,7 @@ module.exports = {
 
     displayAllHeaders: true, // 默认值：false
     activeHeaderLinks: true, // 默认值：true
-    lastUpdated: 'Last Updated', // string | boolean
+    lastUpdated: 'Última atualização', // string | boolean
 
     serviceWorker: {
       updatePopup: true // Boolean | Object, 默认值是 undefined.
