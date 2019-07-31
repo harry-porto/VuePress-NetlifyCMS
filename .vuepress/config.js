@@ -12,10 +12,12 @@ module.exports = {
     sidebar: [
       {
         title: 'Boas-vindas',
+        collapsable: false,
         link: '/'
       },
       {
         title: 'Sobre',
+        collapsable: false,
         link: '/about.md'
       },
       {
@@ -29,7 +31,8 @@ module.exports = {
         title: 'Componentes',
         collapsable: true,
         children: [
-          '/components/'
+          '/components/radio-button.md',
+          '/components/select.md'
         ]
       }
     ],
