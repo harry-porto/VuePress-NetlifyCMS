@@ -17,6 +17,12 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
+  path: en/contributing
+  label: Contributing
+  create: all
+  match: "**/*"
+  new_doc_ext: ".md"
+- type: directory
   path: en/styles
   label: Styles
   create: all
@@ -40,6 +46,12 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
+- type: directory
+  path: pt/contribuindo
+  label: Contribuindo
+  create: all
+  match: "**/*"
+  new_doc_ext: ".md"
 upload_dir: media
 public_path: "/media"
 front_matter_path: ''
