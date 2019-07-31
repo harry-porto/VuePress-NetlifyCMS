@@ -15,27 +15,92 @@ module.exports = {
   ],
   themeConfig: {
     // sidebar: 'auto',
-    sidebar: [
-      [ '/', 'Boas-vindas' ],
-      [ '/about.md', 'Sobre' ],
-      {
-        title: 'Estilos',
-        collapsable: true,
-        children: [
-          ['/styles/colors', 'Cores'],
-        ]
+    locales: {
+      '/': {
+        // text for the language dropdown
+        selectText: 'Línguas',
+        // label for this locale in the language dropdown
+        label: 'Português',
+        // text for the edit-on-github link
+        editLinkText: 'Editar',
+        // config for Service Worker 
+        serviceWorker: {
+          updatePopup: {
+            message: "Novo conteúdo disponível.",
+            buttonText: "Atualizar"
+          }
+        },
+        // algolia docsearch options for current locale
+        algolia: {},
+        sidebar: [
+          [ '/', 'Boas-vindas' ],
+          [ '/about.md', 'Sobre' ],
+          {
+            title: 'Estilos',
+            collapsable: true,
+            children: [
+              ['/styles/colors', 'Cores'],
+            ]
+          },
+          {
+            title: 'Componentes',
+            collapsable: true,
+            children: [
+              ['/components/badge', 'Badge'],
+              ['/components/radio', 'Radio'],
+              ['/components/select', 'Select'],          
+            ]
+          }
+        ],
       },
-      {
-        title: 'Componentes',
-        collapsable: true,
-        children: [
-          ['/components/badge', 'Badge'],
-          ['/components/radio', 'Radio'],
-          ['/components/select', 'Select'],          
-        ]
+      '/en/': {
+        selectText: 'Languages',
+        label: 'English',
+        editLinkText: 'Edit',
+        serviceWorker: {
+          updatePopup: {
+            message: "New content available",
+            buttonText: "Refresh"
+          }
+        },
+        algolia: {},
+        sidebar: [
+          [ '/', 'Welcome' ],
+          [ '/about.md', 'About' ],
+          {
+            title: 'Styles',
+            collapsable: true,
+            children: [
+              ['/styles/colors', 'Colors'],
+            ]
+          },
+          {
+            title: 'Components',
+            collapsable: true,
+            children: [
+              ['/components/badge', 'Badge'],
+              ['/components/radio', 'Radio'],
+              ['/components/select', 'Select'],          
+            ]
+          }
+        ],
       }
-    ],
+    }
 
+    locales: {
+      // The key is the path for the locale to be nested under.
+      // As a special case, the default locale can use '/' as its path.
+      '/': {
+        lang: 'pt-BR', // this will be set as the lang attribute on <html>
+        title: 'Magica',
+        description: 'Design System da Conta Azul'
+      },
+      '/en/': {
+        lang: 'en-US',
+        title: 'Magica',
+        description: 'Conta Azul Design System'
+      }
+    },
     displayAllHeaders: true, // 默认值：false
     activeHeaderLinks: true, // 默认值：true
     lastUpdated: 'Última atualização', // string | boolean
