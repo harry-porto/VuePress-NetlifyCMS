@@ -1,6 +1,6 @@
 ---
 sidebarDepth: 2
-title: Cores
+title: Estilos base
 date: 2019-07-31T02:08:13.582Z
 ---
-adsda
+estilos base

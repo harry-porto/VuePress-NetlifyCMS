@@ -3,63 +3,29 @@ module.exports = {
   description: 'Design System da Conta Azul',
   dest: 'pages',
   themeConfig: {
-
-    nav: [
-      { text: 'Home', link: '/' }
-    ],
-
     sidebar: 'auto',
     sidebar: [
-      {
-        title: 'Home',
-        collapsable: false,
-        children: [
-          '/'
-        ]
-      },
-      {
-        title: 'Sobre',
-        collapsable: false,
-        children: [
-          'about'
-        ]
-      },
+      [ '/', 'Boas-vindas' ],
+      [ '/about.md', 'Sobre' ],
       {
         title: 'Estilos',
         collapsable: true,
         children: [
-          'styles/colors'
+          '/styles/colors.md'
         ]
       },
-    ]
-    // sidebar: [
-    //   {
-    //     title: 'Boas-vindas',
-    //     link: '/'
-    //   },
-    //   {
-    //     title: 'Sobre',
-    //     link: '/about.md'
-    //   },
-    //   {
-    //     title: 'Estilos',
-    //     collapsable: true,
-    //     children: [
-    //       '/styles/colors.md'
-    //     ]
-    //   },
-    //   {
-    //     title: 'Componentes',
-    //     collapsable: true,
-    //     children: [
-    //       '/components/radio-button.md',
-    //       '/components/select.md'
-    //     ]
-    //   }
-    // ],
+      {
+        title: 'Componentes',
+        collapsable: true,
+        children: [
+          '/components/radio.md',
+          '/components/select.md'
+        ]
+      }
+    ],
 
-    displayAllHeaders: true, // 默认值：false
-    activeHeaderLinks: true, // 默认值：true
+    displayAllHeaders: false, // 默认值：false
+    activeHeaderLinks: false, // 默认值：true
     lastUpdated: 'Última atualização', // string | boolean
 
     serviceWorker: {
@@ -73,10 +39,10 @@ module.exports = {
 
 
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'harry-porto/VuePress-NetlifyCMS',
+    // repo: 'harry-porto/VuePress-NetlifyCMS',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-    repoLabel: 'Github',
+    // repoLabel: 'Github',
 
     // 以下为可选的编辑链接选项
 
