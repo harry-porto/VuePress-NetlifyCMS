@@ -11,3 +11,5 @@ fields:
 - type: datetime
   name: date
   label: date
+pages:
+- en/components/wizard.md
