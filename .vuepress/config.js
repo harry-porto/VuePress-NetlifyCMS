@@ -46,26 +46,7 @@ module.exports = {
         },
         // algolia docsearch options for current locale
         algolia: {},
-        sidebar: [
-          [ '/pt/', 'Boas-vindas' ],
-          [ '/pt/sobre.md', 'Sobre' ],
-          {
-            title: 'Estilos',
-            collapsable: true,
-            children: [
-              ['/pt/estilos/cores', 'Cores'],
-            ]
-          },
-          {
-            title: 'Componentes',
-            collapsable: true,
-            children: [
-              ['/pt/componentes/badge', 'Badge'],
-              ['/pt/componentes/radio', 'Radio'],
-              ['/pt/componentes/select', 'Select'],          
-            ]
-          }
-        ],
+        sidebar: 'auto',
       },
       '/en/': {
         selectText: 'Languages',
@@ -78,26 +59,7 @@ module.exports = {
           }
         },
         algolia: {},
-        sidebar: [
-          [ '/en/', 'Welcome' ],
-          [ '/en/about.md', 'About' ],
-          {
-            title: 'Styles',
-            collapsable: true,
-            children: [
-              ['/en/styles/colors', 'Colors'],
-            ]
-          },
-          {
-            title: 'Components',
-            collapsable: true,
-            children: [
-              ['/en/components/badge', 'Badge'],
-              ['/en/components/radio', 'Radio'],
-              ['/en/components/select', 'Select'],          
-            ]
-          }
-        ],
+        sidebar: 'auto',
       }
     },
     plugins: {
