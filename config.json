@@ -1,45 +1,51 @@
 {
-    "title": "Magica",
-    "description": "DS",
-    "logo": "/upload/logo.svg",
-    "footer": "Ⓒ Conta Azul",
-    "favicon": "favicon-32x32.png",
-    "navigation": [
-      {
-        "text": "Home - English",
-        "link": "/en",
-        "position": "left",
-        "external": false
-      },
-      {
-        "text": "Home - Português",
-        "link": "/pt",
-        "position": "left",
-        "external": false
-      },
-      {
-        "text": "Components",
-        "link": "/en/componentes/",
-        "position": "right",
-        "external": false
-      },
-      {
-        "text": "Componentes",
-        "link": "/pt/componentes/",
-        "position": "right",
-        "external": false
-      },
-      {
-        "text": "Instagram",
-        "link": "https://www.instagram.com/its.nwa",
-        "position": "left",
-        "external": true
-      },
-      {
-        "text": "Say hi!",
-        "link": "mailto:sayhi@mydomain.com",
-        "position": "right",
-        "external": true
-      }
-    ]
-  }
+  "title": "Magica",
+  "description": "DS",
+  "logo": "/upload/logo.svg",
+  "footer": "Ⓒ Conta Azul",
+  "favicon": "favicon-32x32.png",
+  "navigation": [
+    {
+      "text": "Teste",
+      "link": "/componentes/contaazul",
+      "position": "",
+      "external": ""
+    },
+    {
+      "text": "Home - English",
+      "link": "/en",
+      "position": "left",
+      "external": false
+    },
+    {
+      "text": "Home - Português",
+      "link": "/pt",
+      "position": "left",
+      "external": false
+    },
+    {
+      "text": "Components",
+      "link": "/en/componentes/",
+      "position": "right",
+      "external": false
+    },
+    {
+      "text": "Componentes",
+      "link": "/pt/componentes/",
+      "position": "right",
+      "external": false
+    },
+    {
+      "text": "Instagram",
+      "link": "https://www.instagram.com/its.nwa",
+      "position": "left",
+      "external": true
+    },
+    {
+      "text": "Say hi!",
+      "link": "mailto:sayhi@mydomain.com",
+      "position": "right",
+      "external": true
+    }
+  ]
+}

@@ -11,3 +11,14 @@ fields:
 - type: datetime
   name: date
   label: date
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: content
+pages:
+- en/components/wizard.md

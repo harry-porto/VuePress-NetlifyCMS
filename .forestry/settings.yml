@@ -64,6 +64,9 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
+- type: document
+  path: config.json
+  label: Site Config
 upload_dir: media
 public_path: "/media"
 front_matter_path: ''
